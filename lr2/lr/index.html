@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Laboratory - WEB-programming</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Laboratory";
+        var mkdocs_page_input_path = "lr2\\lr.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> WEB-programming
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">1 lab</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../lr1/1/">Task 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../lr1/2/">Task 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../lr1/3/">Task 3</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../lr1/4/">Task 4</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../lr1/5/">Task 5</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2 lab</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Laboratory</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">Описание</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">Функциональные возможности</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_3">Просмотр доступных конференций</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_4">Регистрация на конференцию с указанием темы доклада</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_5">Просмотр и редактирование регистраций</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_6">Оставление отзывов о конференции</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_7">Основные файлы и структура проекта</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_8">Шаблоны</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#url">URL маршруты</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_9">Примечания</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">WEB-programming</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">2 lab</li>
+      <li class="breadcrumb-item active">Laboratory</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="2">Лабораторная работа 2</h1>
+<h2 id="_1">Описание</h2>
+<p>Веб-приложение для управления научными конференциями. Оно позволяет пользователям регистрироваться на конференции, указывать тему своих докладов, просматривать участников и отзывы, а также оставлять свои отзывы о конференциях. Пользователи могут редактировать свои регистрации, включая изменение темы доклада.</p>
+<h2 id="_2">Функциональные возможности</h2>
+<h3 id="_3">Просмотр доступных конференций</h3>
+<p>Пользователь может просматривать список доступных конференций, видеть их название, место проведения, даты, темы, описание и условия участия.</p>
+<h3 id="_4">Регистрация на конференцию с указанием темы доклада</h3>
+<p>Зарегистрированные пользователи могут выбрать конференцию и указать тему своего доклада при регистрации.</p>
+<h3 id="_5">Просмотр и редактирование регистраций</h3>
+<p>Пользователь может просмотреть список своих регистраций на странице "Мои регистрации", редактировать тему доклада или удалить свою регистрацию.</p>
+<h3 id="_6">Оставление отзывов о конференции</h3>
+<p>Пользователи могут оставлять отзывы о конференции и указывать рейтинг. Все отзывы видны на странице конференции.</p>
+<h2 id="_7">Основные файлы и структура проекта</h2>
+<ul>
+<li>models.py — содержит модели Conference и Registration. Registration включает поле topic для указания темы доклада.</li>
+<li>forms.py — содержит формы RegistrationForm для регистрации и RegistrationEditForm для редактирования темы доклада.</li>
+<li>views.py — реализует основные представления для регистрации, редактирования, просмотра списка конференций и отзывов.</li>
+<li>urls.py — определяет маршруты для всех страниц приложения.</li>
+<li>templates/ — папка с HTML-шаблонами для страниц приложения.</li>
+</ul>
+<h2 id="_8">Шаблоны</h2>
+<ul>
+<li>
+<p>base.html<br />
+  Базовый шаблон с навигационным меню. Содержит ссылки на страницу с доступными конференциями, страницу регистрации, список регистраций пользователя и выход из системы.</p>
+</li>
+<li>
+<p>register_for_conference.html<br />
+  Форма регистрации на конференцию, где пользователь указывает тему своего доклада.</p>
+</li>
+<li>
+<p>edit_registration.html<br />
+  Форма редактирования регистрации, позволяющая изменить тему доклада.</p>
+</li>
+<li>
+<p>conference_details.html<br />
+  Страница с деталями конференции, включая описание, отзывы, участников и условия участия.</p>
+</li>
+<li>
+<p>my_registrations.html<br />
+  Страница со списком всех регистраций пользователя, где также отображаются темы докладов и доступны ссылки на редактирование и удаление регистраций.</p>
+</li>
+</ul>
+<h2 id="url">URL маршруты</h2>
+<ul>
+<li>/ — главная страница с навигацией.</li>
+<li>/register_for_conference/<int:conference_id>/ — регистрация на конференцию.</li>
+<li>/my_registrations/ — список регистраций пользователя.</li>
+<li>/registration/<int:registration_id>/edit/ — редактирование темы доклада.</li>
+<li>/conference/<int:conference_id>/ — просмотр информации о конференции и оставленных отзывах.</li>
+</ul>
+<h2 id="_9">Примечания</h2>
+<ul>
+<li>Для входа и выхода из системы используются стандартные Django views, подключенные через django.contrib.auth.urls.</li>
+<li>В проекте используется условный рендеринг на основе статуса пользователя (user.is_authenticated) для отображения определенных ссылок в меню.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../lr1/5/" class="btn btn-neutral float-left" title="Task 5"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../lr1/5/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
